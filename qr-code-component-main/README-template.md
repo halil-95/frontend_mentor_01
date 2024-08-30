@@ -3,16 +3,18 @@
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
-
-- [Overview](#overview)
+[//]: # (Это комментарий, он не будет отображаться)
+- [Overview](#Overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [need folder](#folder-assets)
   - [Built with](#built-with)
+  - [css library](#stylus)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
+- [Author](#Halil Aliyew)
 - [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -38,6 +40,15 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+### folder-assets
+
+  - screenshot
+  - css
+  - script
+  - design
+  - fonts
+
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -50,6 +61,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
+
+### stylus
+
+
 
 ### What I learned
 
