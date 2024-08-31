@@ -3,8 +3,9 @@
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
-[//]: # (Это комментарий, он не будет отображаться)
+
 - [Overview](#Overview)
+  - [Welcome](#Welcome)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -14,12 +15,15 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#Halil Aliyew)
+- [Author](#Author)
 - [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+### Welcome
+ Welcome everyone,  my project will be according to plan, each plan will be built according to the list, and the report on implementation is mandatory
 
 ### Screenshot
 
