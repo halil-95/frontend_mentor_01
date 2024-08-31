@@ -9,6 +9,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [Study for beginner](#html)
   - [need folder](#folder-assets)
   - [Built with](#built-with)
   - [css library](#stylus)
@@ -43,6 +44,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+### html
+  - [I study from site](https://www.w3schools.com/html/default.asp)
+  
 
 ### folder-assets
 
