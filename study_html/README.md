@@ -1,3 +1,5 @@
+
+
 # Study HTML
 
 What is an HTML Element?
@@ -9,57 +11,55 @@ The HTML element is everything from the start tag to the end tag:
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 
-## elements
+---
+
+## elements (tag)
  - \<h1>
  - \<p></p>
  - \<br/>
  - [\<pre>](#pre)
  - [\<hr>](#hr)
- 
+
     - [**Элементы форматирования HTML**](#example)
 
-        - \<**b**>- Жирный текст
-        - \<**strong**>- Важный текст
-        - \<**i**>- Курсивный текст
-        - \<**em**>- Выделенный текст
-        - \<**mark**>- Выделенный текст
-        - \<**small**>- Меньший текст
-        - \<**del**>- Удаленный текст
-        - \<**ins**>- Вставленный текст
-        - \<**sub**>- Подстрочный текст
-        - \<**sup**>- Надстрочный текст
+        - \<**strong**> <strong>- Важный текст
+        - \<**b**> <b>- Жирный текст
+        - \<**i**> <i>- Курсивный текст
+        - \<**em**> <em>- Выделенный текст
+        - \<**mark**> <mark>- Выделенный текст
+        - \<**small**> <small>- Меньший текст
+        - \<**del**> <del>- Удаленный текст
+        - \<**ins**> <ins>- Вставленный текст
+        - \<**sub**> <sub>- Подстрочный текст
+        - \<**sup**> <sup>- Надстрочный текст
 
     - **элементы цитат и цитирования**
 
-        - \<**abbr**>	Defines an abbreviation or acronym
-        - \<**address**>	Defines contact information for the author/owner of a document
-        - \<**bdo**>	Defines the text direction
-        - \<**blockquote**>Defines a section that is quoted from another source
-        - \<**cite**>	Defines the title of a work
-        - \<**q**>	Defines a short inline quotation
+        - \<**abbr**> - Defines an abbreviation or acronym
+        - \<**address**> - Defines contact information for the author/owner of a document
+        - \<**bdo**> - Defines the text direction
+        - \<**blockquote**> -  Defines a section that is quoted from another source
+        - \<**cite**> - Defines the title of a work
+        - \<**q**> - Defines a short inline quotation
 
+
+---
 
 ## atribute
  - [lang](#lang)
  - [title](#title)
  - [style](#style)
 
+---
+
 ## [Cmment](#comment)
 
  
 
+---
 
 
-
-    
-
-
-
- 
-
-
-
-# Description elements
+# Description Elements
 
  ## pre 
  - Элемент HTML \<**pre**>определяет предварительно отформатированный текст.
@@ -76,6 +76,8 @@ The HTML element is everything from the start tag to the end tag:
         Oh, bring back my Bonnie to me.
     </pre>
     ```
+
+---
 
  ## hr
  - Тег \<hr> <hr>определяет тематический разрыв на HTML-странице и чаще всего отображается в виде горизонтальной линии.
@@ -97,8 +99,9 @@ The HTML element is everything from the start tag to the end tag:
     <b>This text is bold</b>
  ```
 
+---
 
-# Description atribute
+# Description **Atribute**
 
  ## lang
 - Вы всегда должны включать **lang** атрибут внутри <**html**>тега, чтобы объявить язык веб-страницы. Это предназначено для помощи поисковым системам и браузерам.
@@ -122,12 +125,16 @@ The HTML element is everything from the start tag to the end tag:
         </html>
     ```
 
+---
+
  ## title
  - Атрибут titleопределяет некоторую дополнительную информацию об элементе.
 Значение атрибута title будет отображаться в виде подсказки при наведении курсора мыши на элемент:
     ```html
         <p title="I'm a tooltip">This is a paragraph.</p>
     ```
+ ---
+ 
  ## style
  - Задать стиль HTML-элемента можно с помощью атрибута style.
  Атрибут HTML styleимеет следующий синтаксис:
@@ -139,6 +146,7 @@ The HTML element is everything from the start tag to the end tag:
     <h1 style="font-size:300%;">This is a heading</h1>
     <p style="font-size:160%;">This is a paragraph.</p>
     ```
+---
 
  ## comment
 
@@ -160,3 +168,5 @@ The HTML element is everything from the start tag to the end tag:
         -->
         <p>This is a paragraph too.</p>
     ```
+
+---
