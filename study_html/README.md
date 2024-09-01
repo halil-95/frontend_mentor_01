@@ -45,16 +45,26 @@ The HTML element is everything from the start tag to the end tag:
 
 ---
 
-## atribute
+## Atribute
  - [lang](#lang)
  - [title](#title)
  - [style](#style)
 
 ---
 
-## [Cmment](#comment)
+## Atribute_Propertions
+ - [Color](#Color)
+    - **define name**
+        - [Red Green Blue](#rgb)
+        - [Red Green Blue alpha ](#rgba) 
+        - [Шестнадцатеричный цвет](#rrggbb)
+        - [HSL and HSLA Colors](#hsl)
+        - [HSL and HSLA Colors alpha](#hsla)
+    
 
- 
+---
+
+## [Cmment](#comment)
 
 ---
 
@@ -64,6 +74,8 @@ The HTML element is everything from the start tag to the end tag:
  ## pre 
  - Элемент HTML \<**pre**>определяет предварительно отформатированный текст.
  Текст внутри \<**pre**> элемента отображается шрифтом фиксированной ширины (обычно Courier), при этом сохраняются как пробелы, так и переносы строк:
+
+    >example
 
     ```html
     <pre>
@@ -83,6 +95,8 @@ The HTML element is everything from the start tag to the end tag:
  - Тег \<hr> <hr>определяет тематический разрыв на HTML-странице и чаще всего отображается в виде горизонтальной линии.
 Элемент \<hr> используется для разделения содержимого (или определения изменения) на HTML-странице:
 
+    >example
+
     ```html
     <h1>This is heading 1</h1>
     <p>This is some text.</p>
@@ -91,13 +105,15 @@ The HTML element is everything from the start tag to the end tag:
     <p>This is some other text.</p>
     <hr>
     ```
-## example
 
- ```html
-    <em>This text is emphasized</em>
-    <strong>This text is important!</strong>
-    <b>This text is bold</b>
- ```
+
+    >example
+
+    ```html
+        <em>This text is emphasized</em>
+        <strong>This text is important!</strong>
+        <b>This text is bold</b>
+    ```
 
 ---
 
@@ -105,6 +121,8 @@ The HTML element is everything from the start tag to the end tag:
 
  ## lang
 - Вы всегда должны включать **lang** атрибут внутри <**html**>тега, чтобы объявить язык веб-страницы. Это предназначено для помощи поисковым системам и браузерам.
+
+    >example
 
     ```html
     <!DOCTYPE html>
@@ -115,6 +133,8 @@ The HTML element is everything from the start tag to the end tag:
         </html>
     ```
  - Коды стран также могут быть добавлены к коду языка в lang атрибуте. Таким образом, первые два символа определяют язык HTML-страницы, а последние два символа определяют страну.
+
+    >example
 
     ```html
     <!DOCTYPE html>
@@ -129,7 +149,9 @@ The HTML element is everything from the start tag to the end tag:
 
  ## title
  - Атрибут titleопределяет некоторую дополнительную информацию об элементе.
-Значение атрибута title будет отображаться в виде подсказки при наведении курсора мыши на элемент:
+Значение атрибута title будет отображаться в виде подсказки при 
+    >example
+    наведении курсора мыши на элемент:
     ```html
         <p title="I'm a tooltip">This is a paragraph.</p>
     ```
@@ -138,6 +160,8 @@ The HTML element is everything from the start tag to the end tag:
  ## style
  - Задать стиль HTML-элемента можно с помощью атрибута style.
  Атрибут HTML styleимеет следующий синтаксис:
+
+    >example
 
     ```html
     <tagname style="property:value;">
@@ -148,9 +172,133 @@ The HTML element is everything from the start tag to the end tag:
     ```
 ---
 
+>## Color
+ - Цвета HTML указываются с помощью предопределенных названий цветов или значений RGB, HEX, HSL, RGBA или HSLA.
+
+Названия цветов
+В HTML цвет можно указать с помощью имени цвета:
+- Помидор
+- Апельсин
+- DodgerBlue
+- СреднийSeaGreen
+- Серый
+- Сланцево-голубой
+- Фиолетовый
+- Светло-серый
+
+> example 
+
+    >example
+
+```html
+
+    <h1 style="background-color:DodgerBlue;">Hello World</h1>
+    <p style="background-color:Tomato;">Lorem ipsum...</p>
+
+```
+
+ >> ## rgb
+   Значения цветов RGB <br>
+   В HTML цвет можно указать как значение RGB, используя    следующую формулу:
+   ```html
+    rgb( красный, зеленый , синий )
+   ```
+   Каждый параметр (красный, зеленый и синий) определяет     интенсивность цвета со значением от 0 до 255.
+   
+   Это означает, что существует 256 x 256 x 256 =   16777216    возможных цветов!<br>
+   Например, `rgb(255, 0, 0)` отображается красным    цветом,    поскольку для красного цвета установлено   максимальное    значение (255), а для двух других   (зеленого и синего) — 0.<br>
+   Другой пример:` rgb(0, 255, 0)` отображается зеленым   цветом,    поскольку для зеленого установлено   максимальное значение    (255), а для двух других   (красного и синего) установлено    значение 0.  <br>
+   Чтобы отобразить черный цвет, установите все   параметры    цвета на 0, например:` rgb(0, 0, 0)`.<br/>
+   Чтобы отобразить белый цвет, установите все параметры   цвета  на 255, например:` rgb(255, 255, 255).` <br/>
+
+>>>### rgba
+
+- Цветовые значения RGBA представляют собой расширение    цветовых значений RGB с помощью альфа-канала, который    определяет непрозрачность цвета.
+
+    Значение цвета RGBA указывается с помощью:
+
+    rgba( красный, зеленый , синий, альфа )
+
+    Параметр альфа — это число от 0,0 (полностью прозрачный)    до  1,0 (совсем непрозрачный):
+
+    Поэкспериментируйте, смешивая значения RGBA ниже:
+
+>example
+
+```html
+
+    rgba(255, 99, 71, 0.5)  
+
+```
+
+## rrggbb
+ - Значения цвета HEX
+В HTML цвет можно указать с помощью шестнадцатеричного значения в форме:<br/>
+    rrggbb<br/>
+    Где rr (красный), gg (зеленый) и bb (синий) — шестнадцатеричные значения от 00 до ff (то же самое, что и десятичные 0-255).<br/>
+    Например, #ff0000 отображается красным цветом, поскольку для красного цвета установлено максимальное значение (ff), а для двух других (зеленого и синего) установлено значение 00.
+
+    Другой пример: #00ff00 отображается зеленым цветом, поскольку для зеленого цвета установлено максимальное значение (ff), а для двух других (красного и синего) установлено значение 00.<br/>
+    Чтобы отобразить черный цвет, установите все параметры цвета на 00, например: #000000.<br/>
+    Чтобы отобразить белый цвет, установите все параметры цвета на ff, например: #ffffff.<br/>
+    Поэкспериментируйте, смешивая указанные ниже значения HEX:
+
+```html
+    <h1 style="background-color:#ff0000;">#ff0000</h1>
+    <h1 style="background-color:#0000ff;">#0000ff</h1>
+    <h1 style="background-color:#3cb371;">#3cb371</h1>
+    <h1 style="background-color:#ee82ee;">#ee82ee</h1>
+    <h1 style="background-color:#ffa500;">#ffa500</h1>
+    <h1 style="background-color:#6a5acd;">#6a5acd</h1>
+```
+
+>> ## hsl
+
+
+- HSL означает оттенок, насыщенность и яркость.<br/>
+    Цветовые значения HSLA являются расширением HSL с альфа-каналом (непрозрачностью).<br/>
+    Значения цвета HSL
+    В HTML цвет можно задать с помощью оттенка, насыщенности и яркости (HSL) в следующей форме:<br/>
+    hsl( оттенок , насыщенность , яркость )<br/>
+    Оттенок — это градус на цветовом круге от 0 до 360. 0 — красный, 120 — зеленый, а 240 — синий.<br/>
+    Насыщенность — это процентное значение. 0% означает оттенок серого, а 100% — полный цвет.<br/>
+    Яркость также является процентным значением. 0% — черный, 100% — белый.<br/>
+    Поэкспериментируйте, смешивая значения HSL ниже:
+
+    >> [example](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl)
+    
+    ```html
+
+        <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+        <h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+        <h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+
+    ```
+>> ## hsla
+    
+>>example
+
+    ```html
+
+        <h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+   
+    ```
+---
+
+
  ## comment
 
  - first method
+
+    >example
 
     ```html
         <p>This is a paragraph.</p>
@@ -159,6 +307,8 @@ The HTML element is everything from the start tag to the end tag:
     ```
 
  - second method
+
+    >example
 
     ```html
         <p>This is a paragraph.</p>
