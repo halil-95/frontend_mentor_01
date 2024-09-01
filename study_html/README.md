@@ -15,12 +15,37 @@ The HTML element is everything from the start tag to the end tag:
  - \<br/>
  - [\<pre>](#pre)
  - [\<hr>](#hr)
+ 
+    - [**Элементы форматирования HTML**](#example)
+
+        - \<**b**>- Жирный текст
+        - \<**strong**>- Важный текст
+        - \<**i**>- Курсивный текст
+        - \<**em**>- Выделенный текст
+        - \<**mark**>- Выделенный текст
+        - \<**small**>- Меньший текст
+        - \<**del**>- Удаленный текст
+        - \<**ins**>- Вставленный текст
+        - \<**sub**>- Подстрочный текст
+        - \<**sup**>- Надстрочный текст
+
+    - **элементы цитат и цитирования**
+
+        - \<**abbr**>	Defines an abbreviation or acronym
+        - \<**address**>	Defines contact information for the author/owner of a document
+        - \<**bdo**>	Defines the text direction
+        - \<**blockquote**>Defines a section that is quoted from another source
+        - \<**cite**>	Defines the title of a work
+        - \<**q**>	Defines a short inline quotation
 
 
 ## atribute
  - [lang](#lang)
  - [title](#title)
  - [style](#style)
+
+## [Cmment](#comment)
+
  
 
 
@@ -64,6 +89,13 @@ The HTML element is everything from the start tag to the end tag:
     <p>This is some other text.</p>
     <hr>
     ```
+## example
+
+ ```html
+    <em>This text is emphasized</em>
+    <strong>This text is important!</strong>
+    <b>This text is bold</b>
+ ```
 
 
 # Description atribute
@@ -95,4 +127,36 @@ The HTML element is everything from the start tag to the end tag:
 Значение атрибута title будет отображаться в виде подсказки при наведении курсора мыши на элемент:
     ```html
         <p title="I'm a tooltip">This is a paragraph.</p>
+    ```
+ ## style
+ - Задать стиль HTML-элемента можно с помощью атрибута style.
+ Атрибут HTML styleимеет следующий синтаксис:
+
+    ```html
+    <tagname style="property:value;">
+    <h1 style="text-align:center;">Centered Heading</h1>
+    <p style="text-align:center;">Centered paragraph.</p>
+    <h1 style="font-size:300%;">This is a heading</h1>
+    <p style="font-size:160%;">This is a paragraph.</p>
+    ```
+
+ ## comment
+
+ - first method
+
+    ```html
+        <p>This is a paragraph.</p>
+        <!-- <p>This is another paragraph </p> -->
+        <p>This is a paragraph too.</p>
+    ```
+
+ - second method
+
+    ```html
+        <p>This is a paragraph.</p>
+        <!--
+        <p>Look at this cool image:</p>
+        <img border="0" src="pic_trulli.jpg" alt="Trulli">
+        -->
+        <p>This is a paragraph too.</p>
     ```
