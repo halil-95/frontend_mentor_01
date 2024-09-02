@@ -19,6 +19,7 @@ The HTML element is everything from the start tag to the end tag:
  - \<br/>
  - [\<pre>](#pre)
  - [\<hr>](#hr)
+ - [\<a>](#a)
 
     - [**Элементы форматирования HTML**](#example)
 
@@ -49,6 +50,8 @@ The HTML element is everything from the start tag to the end tag:
  - [lang](#lang)
  - [title](#title)
  - [style](#style)
+ - [<a>](#href)
+
 
 ---
 
@@ -170,6 +173,112 @@ The HTML element is everything from the start tag to the end tag:
     <h1 style="font-size:300%;">This is a heading</h1>
     <p style="font-size:160%;">This is a paragraph.</p>
     ```
+---
+## href
+
+- Абсолютные URL-адреса против относительных URL-адресов
+В обоих приведенных выше примерах в атрибуте используется абсолютный URL (полный веб-адрес) href.
+
+    ```html    
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+    ```
+
+Локальная ссылка (ссылка на страницу того же веб-сайта) указывается с помощью относительного URL (без части «https://www»):
+
+Ссылки HTML — используйте изображение в качестве ссылки
+Чтобы использовать изображение в качестве ссылки, просто поместите <img> тег внутрь <a>тега:
+
+>>example
+```html
+
+    <a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+
+```
+
+ -  **_self** - Default. Opens the document in the same window/tab as it was clicked
+ - **_blank** - Opens the document in a new window or tab
+ - **_parent** - Opens the document in the parent frame
+ - **_top** - Opens the document in the full body of the window
+
+>>example
+ ```html
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+ ```
+
+
+- Ссылка на адрес электронной почты
+    Используйте **mailto:внутри** hrefатрибута для создания ссылки, которая открывает почтовую программу пользователя (чтобы он мог отправить новое электронное письмо):
+    <br/>
+
+    >>example
+
+```html 
+<a href="mailto:someone@example.com">Send email</a>
+```
+Кнопка как ссылка
+Чтобы использовать HTML-кнопку в качестве ссылки, необходимо добавить код JavaScript.
+
+JavaScript позволяет указать, что произойдет при определенных событиях, на>>example
+ при нажатии кнопки:
+
+>>example
+
+```html
+    <button onclick="document.location='default.asp'">HTML Tutorial</button>
+```
+Совет: узнайте больше о JavaScript в нашем руководстве по JavaScript .
+
+Заголовки ссылок
+Атрибут titleопределяет дополнительную информацию об элементе. Информация чаще всего отображается в виде текста подсказки при наведении мыши на элемент.
+
+>>example
+
+```<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our
+html HTML Tutorial</a>
+```
+Подробнее об абсолютных и относительных URL-адресах
+
+>>example
+
+Используйте полный URL-адрес для ссылки на веб-страницу: 
+
+```html
+    <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+```
+
+>>example
+
+Ссылка на страницу, расположенную в папке html на текущем веб-сайте: 
+
+```html
+    <a href="/html/default.asp">HTML tutorial</a>
+```
+
+>>example
+
+Ссылка на страницу, расположенную в той же папке, что и текущая страница: 
+
+```html
+    <a href="default.asp">HTML tutorial</a>
+```
+
+Подробнее о путях к файлам можно прочитать в главе Пути к файлам HTML .
+
+- Краткое содержание главы
+- Используйте <a>элемент для определения ссылки
+- Используйте hrefатрибут для определения адреса ссылки.
+- Используйте targetатрибут, чтобы определить, где открыть связанный документ.
+- Используйте <img>элемент (внутри <a>), чтобы использовать изображение в качестве ссылки
+- Используйте mailto:схему внутри hrefатрибута для создания ссылки, которая открывает - программу электронной почты пользователя.
+
 ---
 
 >## Color
