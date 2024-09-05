@@ -64,6 +64,7 @@ The HTML element is everything from the start tag to the end tag:
         - [Шестнадцатеричный цвет](#rrggbb)
         - [HSL and HSLA Colors](#hsl)
         - [HSL and HSLA Colors alpha](#hsla)
+- [style](#border)
     
 
 ---
@@ -475,6 +476,37 @@ HTML- ссылки — создание закладок
    
     ```
 ---
+
+## border 
+
+<table>
+    <tr>
+        <td style="border:5px red dotted">dotted</td>
+        <td style="border:2px red dashed">dashed</td>     
+        <td style="border:2px red solid">solid</td>     
+        <td style="border:2px red double">double</td>     
+        <td style="border:2px red groove">groove</td>     
+        <td style="border:2px red ridge">ridge</td>     
+        <td style="border:2px red inset">inset</td>     
+        <td style="border:2px red outset">outset</td>     
+        <td style="border:2px red none">none</td>     
+        <td style="border:2px red hidden">hidden</td>  
+    <tr>
+</table>
+
+
+### задача приготовить каленьдарь с помощи таблицы
+ - [x] выбор календаря
+ - [x] определение количество столбцов 
+ - [x] определение количество строк
+ - [ ] название класса 
+ - [ ] определение стиля
+
+
+
+---
+
+
 
 
  ## comment
