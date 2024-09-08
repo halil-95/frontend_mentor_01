@@ -1,0 +1,39 @@
+*{
+    
+}
+.block {
+    border: 2px black solid;
+    max-width: 450px;
+    padding: .2em 1em;
+}
+
+.hour>p:nth-child(2) {
+    color: rgb(49, 170, 170);
+}
+
+table {
+    width: 800px;
+}
+
+tr.week {
+    /* color: blue; */
+    height: 50px;
+}
+
+table,
+tr,
+td {
+    /* border-collapse: collapse; */
+    /* text-align: center; */
+}
+
+tr.days_1>td:nth-child(n):not(:last-child) {
+    color:red
+}
+
+tr.days_6>td:nth-child(n):not(:first-child) {
+    color:red;
+}
+td{
+    font-weight: bold;
+ }
