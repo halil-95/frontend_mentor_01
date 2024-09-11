@@ -10,12 +10,12 @@ section{
     width: 90%;
     height: 220px;
     background-color: red;
-    position: relative;
+    /* position: absolute */
 }
 .ls>div,
 .rs>div{
-    position: absolute;
-    top: -10%;
+    position: sticky;
+    top: 0;
     left: 1px;
     margin-left:20px;
     width: 50px;
@@ -26,4 +26,9 @@ section{
 main{
     display: grid;
 
+}
+
+header{
+    position: sticky;
+    top: 200px;
 }
